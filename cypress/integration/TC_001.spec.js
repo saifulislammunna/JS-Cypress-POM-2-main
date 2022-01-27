@@ -5,3 +5,5 @@ describe('Home Page Visible', () => {
         cy.visit('https://www.flickr.com/')
     })
 })
+
+
