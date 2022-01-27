@@ -8,7 +8,7 @@
     const typedText = 'saifulmunna28@gmail.com'
     const typedPassword = '+P5*M,@cjPRz$Bm'  
 
-    cy.visit('https://identity.flickr.com/login?redir=https%3A%2F%2Fwww.flickr.com%2F')
+    cy.get('.gn-signin > .gn-title').click()
 
      cy.get('[data-testid="identity-email-input"]')
      .type(typedText)
