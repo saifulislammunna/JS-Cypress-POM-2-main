@@ -17,7 +17,7 @@
      cy.get('[data-testid="identity-password-input"]') 
      .type(typedPassword)
      .should('have.value', typedPassword) 
-       cy.get('[data-testid="identity-form-submit-button"]').click()  
+    cy.get('[data-testid="identity-form-submit-button"]').click()  
       
      
 })  
