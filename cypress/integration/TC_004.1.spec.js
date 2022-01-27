@@ -26,8 +26,7 @@ it('Upload photo', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
     cy.get('a > .avatar').click()
     cy.get('.details-container > a').click()
-    cy.get('.hide-on-drag-hover').selectFile('file.json', {
-        action: 'drag-drop'
-    })
+    cy.get('#choose-photos-and-videos').click()
 })
  
+
