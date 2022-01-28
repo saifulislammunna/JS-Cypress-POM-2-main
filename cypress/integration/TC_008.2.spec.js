@@ -30,17 +30,21 @@ it('Photo search', function(){
     .type(typedText)
     .should('have.value', typedText)
     cy.get('.search-icon-button').click()
-
+    /* cy.get('.action').click({multiple: true,force: true}) */
+   /*  .pause()  */
+   /* cy.get('.alt').click({force: true}) */
 })
 
 it('Photo like', function(){
         
-
-      cy.get('.action').click({multiple: true,force: true})  
-      .pause()
+   
+      cy.get('.cancel').click({multiple: true,force: true})   
+      cy.get('.animated-fave-star').first().click({force: true})   
      /* cy.get('#yui_3_16_0_1_1643353528926_1739 > .engagement-icon > .icon > use').click({force: true}) */
-      cy.get('.animated-fave-star').last().click({force: true})   
-        
+     {/* <button class="mini alt cancel">Cancel</button> */}
+     /* cy.get('.animated-fave-star').first().click({force: true})  */  
+    /*  cy.get('.cancel').click({multiple: true,force: true})   */  
+      
      
 
 })
