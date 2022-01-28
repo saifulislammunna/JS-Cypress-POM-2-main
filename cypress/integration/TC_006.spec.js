@@ -27,3 +27,4 @@ it('Notification', function(){
     cy.get('.c-notification-icon').click() 
 
 })
+ 
