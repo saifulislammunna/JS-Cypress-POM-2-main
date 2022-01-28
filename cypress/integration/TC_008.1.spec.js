@@ -22,7 +22,7 @@ it('login test', function(){
      
 })  
 
-it('Sign Out', function(){
+it('Photo search', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
     cy.get('#search-field').click()
     const typedText = 'Computer' 

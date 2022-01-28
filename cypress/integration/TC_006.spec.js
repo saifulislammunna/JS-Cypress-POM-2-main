@@ -24,7 +24,9 @@ it('login test', function(){
 
 it('Notification', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
-    cy.get('.c-notification-icon').click() 
+     cy.get('.c-notification-unseencount').click({force: true})   
+    cy.get/* ('#yui_3_16_0_1_1643352484313_970').click({force: true}) */
 
 })
  
+{/* <span class="c-notification-unseencount hidden"></span> */}
