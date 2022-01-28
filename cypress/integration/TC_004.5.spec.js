@@ -22,9 +22,9 @@ it('login test', function(){
      
 })  
 
-it('settings', function(){
+it('Sign Out', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
     cy.get('a > .avatar').click()
-    cy.get('.menu-section > ul > :nth-child(2) > a').click()
+    cy.get('.menu-section > ul > :nth-child(4) > a').click()
 
 })

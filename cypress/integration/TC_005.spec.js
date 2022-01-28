@@ -22,9 +22,13 @@ it('login test', function(){
      
 })  
 
-it('settings', function(){
+it('Sign Out', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
-    cy.get('a > .avatar').click()
-    cy.get('.menu-section > ul > :nth-child(2) > a').click()
+    cy.get('#search-field').click()
+    const typedText = 'Inorganic Chemistry' 
+    cy.get('#search-field')
+    .type(typedText)
+    .should('have.value', typedText)
+    cy.get('.search-icon-button').click()
 
 })
