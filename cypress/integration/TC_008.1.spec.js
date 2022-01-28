@@ -22,10 +22,13 @@ it('login test', function(){
      
 })  
 
-it('Uploader', function(){
+it('Sign Out', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
-    cy.get('.upload-icon').click() 
-    cy.get('#choose-photos-and-videos').click()
+    cy.get('#search-field').click()
+    const typedText = 'Computer' 
+    cy.get('#search-field')
+    .type(typedText)
+    .should('have.value', typedText)
+    cy.get('.search-icon-button').click()
 
 })
- 
