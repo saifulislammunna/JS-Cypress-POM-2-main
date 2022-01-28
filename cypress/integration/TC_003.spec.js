@@ -3,7 +3,6 @@
     cy.visit('https://www.flickr.com/')
 })
 
-
   it('SignUp test', function(){
     const typedFirstName = 'Saiful Islam'
     const typedLastName = 'Munna'

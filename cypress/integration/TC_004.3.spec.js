@@ -22,11 +22,9 @@ it('login test', function(){
      
 })  
 
-it('Upload photo', function(){
+it('Mail', function(){
     cy.get('[data-testid="identity-form-submit-button"]').click()  
     cy.get('a > .avatar').click()
-    cy.get('.details-container > a').click()
-    cy.get('#choose-photos-and-videos').onClick()
-})
- 
+    cy.get('#yui_3_16_0_1_1643344010970_1033').click()
 
+})
