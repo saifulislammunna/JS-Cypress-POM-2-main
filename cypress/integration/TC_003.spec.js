@@ -32,7 +32,7 @@
      .type(typedPassword)
      .should('have.value', typedPassword)
 
-    cy.get('[style="width: 304px; height: 78px;"] > div > iframe').click()   
+    cy.get('.recaptcha-checkbox').check({force: true} )   
       /* .recaptcha-checkbox-border */  
      cy.get('[data-testid="identity-form-submit-button"]').click()    
       
