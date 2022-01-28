@@ -1,10 +1,11 @@
-import '../integration/TC_008.2.spec'
  
-it('Photo Share', function(){
+import '../integration/TC_008.5.spec' 
+
+it('Download The Photo', function(){
    
-    /* cy.get('.cancel').click({multiple: true,force: true})  */
-    cy.get('.share-button').click()
-    cy.get('.cancel').click({multiple: true,force: true})  
+    cy.get('.download').click()  
+   
+    cy.get('.cancel').click({multiple: true,force: true})    
     
   
  
