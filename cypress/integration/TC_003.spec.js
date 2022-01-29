@@ -31,10 +31,14 @@
      cy.get('[data-testid="identity-password-input"]') 
      .type(typedPassword)
      .should('have.value', typedPassword)
-
-    cy.get('.recaptcha-checkbox').check({force: true} )   
-      /* .recaptcha-checkbox-border */  
-     cy.get('[data-testid="identity-form-submit-button"]').click()    
-      
      
+     cy.get('iframe')
+    
+     .check({ force: true })
+      .should('be.checked') 
+      /* .and('have.attr') */   
+      /* .recaptcha-checkbox-border */  
+      /* cy.get('[data-testid="identity-form-submit-button"]').click();  */ 
+      
+     /*  '[type="checkbox"]' */
 })   
